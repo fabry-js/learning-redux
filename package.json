@@ -12,6 +12,12 @@
   "devDependencies": {
     "webpack": "4.41.6",
     "webpack-cli": "3.3.11",
-    "webpack-dev-server": "3.10.3"
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.5.0",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "reselect": "^4.0.0"
   }
 }
