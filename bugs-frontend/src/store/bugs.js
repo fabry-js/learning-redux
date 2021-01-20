@@ -38,7 +38,7 @@ const slice = createSlice({
   },
 });
 
-export const {
+const {
   bugAdded,
   bugResolved,
   bugAssignedToUser,
@@ -57,8 +57,6 @@ export const loadBugs = () => (dispatch, getState) => {
   const { lastFetched } = getState().entities.bugs;
 
   const diffInMinutes = moment().diff(moment(lastFetched), "minutes");
-
-  if (diffInMinutes < 10) return;
 
   return dispatch(
     apiCallBegan({
